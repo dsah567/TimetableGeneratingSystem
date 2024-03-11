@@ -1,13 +1,4 @@
-import { DB_NAME } from "./constants.js";
-import mongoose from "mongoose";
+import connectDB from "./db/index.js";
 process.loadEnvFile();
 
-(async()=>{
-    try{
-        await mongoose.connect(`${process.env.MONGODB_URI}/${DB_NAME}`)
-        console.log("success");
-    }
-    catch(err){
-        console.error("Error: ",err);
-    }
-})();
+connectDB();
