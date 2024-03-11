@@ -6,3 +6,4 @@ npm i -D nodemon
 
 .env node version
 
+npm i -D prettier
