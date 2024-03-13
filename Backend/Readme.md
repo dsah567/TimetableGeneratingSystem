@@ -13,3 +13,4 @@ problem with passwor having special symbol
 
 npm i  express mongoose
 
+npm i cookie-parser cors
